@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://jakarta.ee/xml/ns/jakartaee
+                             http://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <display-name>Task Management System</display-name>
+
+    <!-- Servlet for adding tasks -->
+    <servlet>
+        <servlet-name>AddTaskServlet</servlet-name>
+        <servlet-class>AddTaskServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddTaskServlet</servlet-name>
+        <url-pattern>/AddTaskServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet for deleting tasks -->
+    <servlet>
+        <servlet-name>DeleteTaskServlet</servlet-name>
+        <servlet-class>DeleteTaskServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteTaskServlet</servlet-name>
+        <url-pattern>/DeleteTaskServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet for viewing tasks -->
+    <servlet>
+        <servlet-name>ViewTaskServlet</servlet-name>
+        <servlet-class>ViewTaskServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewTaskServlet</servlet-name>
+        <url-pattern>/ViewTaskServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet for updating tasks -->
+    <servlet>
+        <servlet-name>UpdateTaskServlet</servlet-name>
+        <servlet-class>UpdateTaskServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateTaskServlet</servlet-name>
+        <url-pattern>/UpdateTaskServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Optional Welcome File -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
